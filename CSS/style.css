@@ -51,12 +51,13 @@ header .wrapper {
   text-align: right;
 }
 
-/* SECTION */
+/* SECTIONS */
 
 section {
+  background-color: #d3d3d3;
+
   /* DEBUG */
   min-height: 500px;
-  background-color: #d3d3d3;
 }
 
 section:nth-child(2n + 2) {
@@ -64,7 +65,7 @@ section:nth-child(2n + 2) {
   background-color: #ffffff;
 }
 
-/* SECTION 1 */
+/* FIRST SECTION */
 
 section:first-child {
   border-bottom: 5px solid #abd7e6;
@@ -75,6 +76,7 @@ section:first-child {
 
 section:first-child .wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 500px;
@@ -86,4 +88,32 @@ section:first-child .section-content {
   height: 80%;
   width: 60%;
   background-color: #ee82ee;
+}
+
+/* CENTRAL SECTIONS */
+
+section .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .section-content-right {
+  /* DEBUG */
+  border: 3px dashed black;
+  height: 700px;
+  width: 70%;
+  background-color: #1e90ff;
+}
+
+section .section-content-left {
+  /* DEBUG */
+  border: 3px dashed black;
+  height: 700px;
+  width: 30%;
+  background-color: #ffc0cb;
+}
+
+section:nth-child(2n + 1) .wrapper {
+  flex-direction: row-reverse;
 }
