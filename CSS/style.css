@@ -23,7 +23,7 @@ header {
 .header.wrapper {
   display: flex;
   align-items: center;
-  min-height: 100px;
+  padding: 15px 0;
 }
 
 .header-left,
@@ -31,6 +31,7 @@ header {
 .header-right {
   padding: 10px;
   font-size: 1.5rem;
+
   /* DEBUG */
   background-color: #daa520;
   border: 2px dashed black;
@@ -48,4 +49,41 @@ header {
 
 .header-right {
   text-align: right;
+}
+
+/* SECTION */
+
+section {
+  /* DEBUG */
+  min-height: 500px;
+  background-color: #d3d3d3;
+}
+
+section:nth-child(2n + 2) {
+  /* DEBUG */
+  background-color: #ffffff;
+}
+
+/* SECTION 1 */
+
+section:first-child {
+  border-bottom: 5px solid #abd7e6;
+
+  /* DEBUG */
+  background-color: #00008b;
+}
+
+section:first-child .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+section:first-child .section-content {
+  /* DEBUG */
+  border: 3px dashed black;
+  height: 80%;
+  width: 60%;
+  background-color: #ee82ee;
 }
