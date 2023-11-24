@@ -128,3 +128,57 @@ section .section-content-left {
 section:nth-child(2n + 1) .wrapper {
   flex-direction: row-reverse;
 }
+
+/* FOOTER */
+
+footer {
+  background-color: #23272a;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+footer .footer-content-right {
+  /* DEBUG */
+  border: 3px dashed black;
+  height: 700px;
+  width: 30%;
+  background-color: #f08080;
+}
+
+footer .footer-content-left {
+  display: flex;
+  /* DEBUG */
+  border: 3px dashed black;
+  height: 700px;
+  width: 70%;
+}
+
+.footer-content-left > [id*="fl"] {
+  background-color: #20b2aa;
+  border: 3px dashed white;
+  width: 25%;
+}
+
+footer hr {
+  border: 1px solid white;
+  margin: 30px 0 40px 0;
+}
+
+.footer-aside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7fffd4;
+  min-height: 100px;
+}
+
+.footer-aside div {
+  background-color: #ffb6c1;
+  padding: 10px 20px;
+  border: 3px dashed black;
+}
