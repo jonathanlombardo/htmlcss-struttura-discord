@@ -13,6 +13,39 @@
   margin: 0 auto;
 }
 
-.wrapper {
+/* HEADER */
+
+header {
+  /* DEBUG */
+  background-color: #add8e6;
+}
+
+.header.wrapper {
   display: flex;
+  align-items: center;
+  min-height: 100px;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  padding: 10px;
+  font-size: 1.5rem;
+  /* DEBUG */
+  background-color: #daa520;
+  border: 2px dashed black;
+}
+
+.header-left,
+.header-right {
+  flex-basis: 20%;
+}
+
+.header-center {
+  flex-basis: 60%;
+  text-align: center;
+}
+
+.header-right {
+  text-align: right;
 }
