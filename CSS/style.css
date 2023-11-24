@@ -16,7 +16,7 @@
 /* HEADER */
 
 header {
-  /* DEBUG */
+  /* debug */
   background-color: #add8e6;
 }
 
@@ -29,10 +29,11 @@ header .wrapper {
 .header-left,
 .header-center,
 .header-right {
+  /* debug */
   padding: 10px;
   font-size: 1.5rem;
 
-  /* DEBUG */
+  /* debug */
   background-color: #daa520;
   border: 2px dashed black;
 }
@@ -55,13 +56,11 @@ header .wrapper {
 
 section {
   background-color: #d3d3d3;
-
-  /* DEBUG */
   padding: 50px 0;
 }
 
 section:nth-child(2n + 2) {
-  /* DEBUG */
+  /* debug */
   background-color: #ffffff;
 }
 
@@ -78,24 +77,28 @@ section:last-of-type .wrapper {
 section:first-of-type {
   border-bottom: 5px solid #abd7e6;
 
-  /* DEBUG */
+  /* debug */
   background-color: #00008b;
 }
 
 section:first-of-type .section-content {
   width: 80%;
+
+  /* debug */
   height: 500px;
   background-color: #ee82ee;
   border: 3px dashed black;
 }
 
 section:last-of-type {
-  /* DEBUG */
+  /* debug */
   background-color: #d3d3d3;
 }
 
 section:last-of-type .section-content {
   width: 100%;
+
+  /* debug */
   height: 900px;
   background-color: #228b22;
   border: 3px dashed black;
@@ -110,18 +113,20 @@ section .wrapper {
 }
 
 section .section-content-right {
-  /* DEBUG */
+  width: 70%;
+
+  /* debug */
   border: 3px dashed black;
   height: 700px;
-  width: 70%;
   background-color: #1e90ff;
 }
 
 section .section-content-left {
-  /* DEBUG */
+  width: 30%;
+
+  /* debug */
   border: 3px dashed black;
   height: 700px;
-  width: 30%;
   background-color: #ffc0cb;
 }
 
@@ -143,25 +148,29 @@ footer .wrapper {
 }
 
 footer .footer-content-right {
-  /* DEBUG */
+  width: 30%;
+
+  /* debug */
   border: 3px dashed black;
   height: 700px;
-  width: 30%;
   background-color: #f08080;
 }
 
 footer .footer-content-left {
   display: flex;
-  /* DEBUG */
+  width: 70%;
+
+  /* debug */
   border: 3px dashed black;
   height: 700px;
-  width: 70%;
 }
 
 .footer-content-left > [id*="fl"] {
+  width: 25%;
+
+  /* debug */
   background-color: #20b2aa;
   border: 3px dashed white;
-  width: 25%;
 }
 
 footer hr {
@@ -173,11 +182,14 @@ footer hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* debug */
   background-color: #7fffd4;
   min-height: 100px;
 }
 
 .footer-aside div {
+  /* debug */
   background-color: #ffb6c1;
   padding: 10px 20px;
   border: 3px dashed black;
