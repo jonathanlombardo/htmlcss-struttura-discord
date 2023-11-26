@@ -13,6 +13,7 @@
   --verysmalltext: 1rem;
   --smalltext: 1.2rem;
   --titletext: 3.5rem;
+  --space: 70px;
 }
 
 .container {
@@ -90,12 +91,30 @@ nav a:hover {
 
 section {
   background-color: #d3d3d3;
-  padding: 50px 0;
+}
+
+section .container {
+  padding-top: var(--space);
+  padding-bottom: var(--space);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section:nth-of-type(2n + 2) {
-  /* debug */
   background-color: #ffffff;
+}
+
+.wave {
+  display: block;
+}
+
+.wave path {
+  fill: #ffffff;
+}
+
+section:nth-of-type(2n + 2) .wave path {
+  fill: #d3d3d3;
 }
 
 /* EXTERNAL SECTION */
@@ -104,16 +123,13 @@ section:first-of-type .container,
 section:last-of-type .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
 section:first-of-type {
-  border-bottom: 5px solid #abd7e6;
   background-image: url(../IMG/jumbo.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 0;
 }
 
 section:first-of-type .section-content {
@@ -126,7 +142,6 @@ section:first-of-type .section-content {
 }
 
 section:first-of-type h1 {
-  padding-top: 90px;
   font-size: var(--titletext);
   font-weight: 900;
 }
@@ -171,12 +186,6 @@ section:last-of-type .section-content {
 }
 
 /* CENTRAL SECTIONS */
-
-section .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 section .section-content-pic {
   width: 70%;
