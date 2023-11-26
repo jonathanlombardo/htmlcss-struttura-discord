@@ -12,7 +12,9 @@
 :root {
   --verysmalltext: 1rem;
   --smalltext: 1.2rem;
+  --mediumtext: 2rem;
   --titletext: 3.5rem;
+  --sectitletext: 3rem;
   --space: 70px;
 }
 
@@ -162,7 +164,7 @@ section:first-of-type .svg-download {
   height: var(--smalltext);
 }
 
-a.btn:hover {
+section:first-of-type a.btn:hover {
   background-color: black;
   color: #dce4fa;
 }
@@ -178,31 +180,66 @@ section:last-of-type {
 
 section:last-of-type .section-content {
   width: 100%;
+  text-align: center;
+}
 
-  /* debug */
-  height: 900px;
-  background-color: #228b22;
-  border: 3px dashed black;
+section:last-of-type .section-content h2 {
+  font-size: var(--sectitletext);
+}
+
+section:last-of-type .section-content p {
+  font-size: var(--smalltext);
+  padding-top: calc(var(--space) / 2);
+}
+
+section:last-of-type .section-content img {
+  display: block;
+  font-size: var(--smalltext);
+  width: 100%;
+}
+
+section:last-of-type .section-content h3 {
+  font-size: var(--mediumtext);
+  padding-top: 18px;
+  background-image: url(../IMG/stars.svg);
+  background-size: contain;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+section:last-of-type .section-content .wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+section:last-of-type .section-content a.btn:hover {
+  background-color: #8ea1e1;
+  color: white;
 }
 
 /* CENTRAL SECTIONS */
 
 section .section-content-pic {
-  width: 70%;
+  width: 60%;
+}
 
-  /* debug */
-  border: 3px dashed black;
-  height: 700px;
-  background-color: #1e90ff;
+section .section-content-pic > img {
+  display: block;
+  width: 100%;
 }
 
 section .section-content-txt {
-  width: 30%;
+  width: 40%;
+}
 
-  /* debug */
-  border: 3px dashed black;
-  height: 700px;
-  background-color: #ffc0cb;
+section .section-content-txt h2 {
+  font-size: var(--sectitletext);
+}
+
+section .section-content-txt p {
+  font-size: var(--smalltext);
+  padding-top: calc(var(--space) / 2);
 }
 
 section:nth-of-type(2n + 1) .container {
