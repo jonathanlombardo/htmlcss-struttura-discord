@@ -4,9 +4,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* GENERAL */
+
+:root {
+  --verysmalltext: 1rem;
+  --smalltext: 1.2rem;
+  --titletext: 3.5rem;
+}
 
 .container {
   width: 1180px;
@@ -32,6 +39,15 @@ a.btn:hover {
   box-shadow: 0 8px rgba(0, 0, 0, 0.262);
 }
 
+a.btn.download {
+  display: flex;
+  align-items: center;
+}
+
+a.btn.download:hover > .svg-download > path {
+  fill: #404eed;
+}
+
 /* HEADER */
 
 header {
@@ -39,7 +55,7 @@ header {
   height: 80px;
   color: #dce4fa;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: var(--verysmalltext);
 }
 
 header .container {
@@ -87,25 +103,57 @@ section:nth-of-type(2n + 2) {
 section:first-of-type .container,
 section:last-of-type .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 section:first-of-type {
   border-bottom: 5px solid #abd7e6;
-
-  /* debug */
-  background-color: #00008b;
+  background-image: url(../IMG/jumbo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 0;
 }
 
 section:first-of-type .section-content {
-  width: 80%;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  color: #dce4fa;
+}
 
-  /* debug */
-  height: 500px;
-  background-color: #ee82ee;
-  border: 3px dashed black;
+section:first-of-type h1 {
+  padding-top: 90px;
+  font-size: var(--titletext);
+  font-weight: 900;
+}
+
+section:first-of-type p,
+section:first-of-type .btn-wrapper {
+  font-size: var(--smalltext);
+  font-weight: 600;
+}
+
+section:first-of-type .btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+section:first-of-type .svg-download {
+  height: var(--smalltext);
+}
+
+a.btn:hover {
+  background-color: black;
+  color: #dce4fa;
+}
+
+a.btn.download:hover .svg-download > path {
+  fill: #dce4fa;
 }
 
 section:last-of-type {
