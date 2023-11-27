@@ -23,7 +23,8 @@ img {
 }
 
 .container {
-  width: 1180px;
+  max-width: 1080px;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
